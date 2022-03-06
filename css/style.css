@@ -1,0 +1,147 @@
+*{
+  padding: 10px;
+  margin: 0px;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+  flex:1;
+  padding: 15px;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+/* Insert de la imagen de fondo */
+body{
+  background-image: url(../images/background-sky.svg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/* Llamado de las fuentes locales */
+@font-face {
+  font-family:Signika-Bold;
+  src: url('../fonts/Signika-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:Signika-Light;
+  src: url('../fonts/Signika-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:Signika-Regular;
+    src: url('../fonts/Signika-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:Signika-SemiBold;
+    src: url('../fonts/Signika-SemiBold.ttf') format('truetype');
+}
+
+/* Logo Ceipa */
+#ceipa{
+  margin:auto;
+  display:block;
+  max-width: 8%;
+  min-width: 8%;
+  width:8%;
+}
+
+/**/
+.p_data{
+  margin:auto;
+  display:block;
+}
+
+#table-data{
+  width: 75%;
+  margin-left: 12%;
+}
+/* Titular: Nombre de usuario */
+#username{
+  font-family: Signika-SemiBold;
+  font-size: 1em;
+  border-top: 1px solid white;
+  color: #263239;/*Dark Green*/
+}
+
+/* Titulos: Campos */
+.titles{
+  font-family: Signika-Regular;
+  font-size: 1em;
+}
+
+/*Botón de envío de datos*/
+#submit-button{
+  margin:auto;
+  margin-top: 8%;
+  display:block;
+  font-size: 1.4em;
+  font-family: Signika-Bold;
+  background: linear-gradient(to right, rgb(195, 155, 82), rgb(201, 170, 113));
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  padding: 5px 27px;
+}
+
+#submit-button:hover{
+  background-image: linear-gradient(rgb(195, 155, 82), rgb(194, 180, 155));
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+/*Import de fuente para los inputs*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Estilizado de los input*/
+input[type="text"], input[type="number"], input[type="date"], select{
+    width: 100%;
+    background: rgba(149, 191, 203, 0.4);
+    box-sizing: border-box;
+    border: 1px solid #263239;
+    border-radius: 20px;
+    color:white;
+    font-weight:bold;
+    padding: 9px 20px;
+    margin: 8px 0;
+}
+option{
+  color:black;
+}
+.inputs::placeholder{
+  font-family:Roboto;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+input[type="checkbox"]{
+  width: 1.3em;
+  height: 1.3em;
+  background-color: transparent;
+  border: 1px solid #263239;
+  border-radius: 50%;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #32a852;
+  box-shadow: 0 0 0 1px #263239;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
